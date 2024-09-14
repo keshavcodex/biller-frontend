@@ -38,6 +38,7 @@ function Home() {
 	};
 
 	const search = async (text: string) => {
+		setUploadResponse('');
 		if (text.trim().length === 0) {
 			setConsumerList([]);
 			return;
